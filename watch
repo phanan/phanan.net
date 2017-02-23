@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scss --watch scss/main.scss:css/main.css --style compressed

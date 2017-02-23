@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+}
+
+::selection {
+	background: #fff;
+	color: #000;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	font: normal 100 30px/50px Roboto, sans-serif;
+	padding: 55px 0 0 85px;
+	text-transform: lowercase;
+	color: #fff;
+	background: #000 url(../img/hinh-rat-to-la-hinh-rat-to.jpg) fixed center;
+	background-size: cover;
+
+	&:after {
+		display: block;
+		content: " ";
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,.8);
+		z-index: -1;
+	}
+}
+
+h1 {
+	font: normal 100 128px/128px Lato, sans-serif;
+	text-indent: -10px; // fix the font spacing
+	margin-bottom: 48px;
+}
+
+@mixin slash {
+	content: " / ";
+	color: rgba(255,255,255,.2);
+}
+
+#things {
+	li {
+		width: 100%;
+	}
+	a {
+		&:hover {
+			color: rgba(255,255,255,.2);
+
+			.url {
+				color: #fff;
+				margin-left: 0;
+
+				&:hover {
+					color: rgba(255,255,255,.4);
+				}
+			}
+		}
+	}
+
+	.url {
+		color: rgba(255,255,255,.2);
+		transition: .5s;
+		margin-left: -1200px;
+
+		&:before {
+			@include slash;
+		}
+	}
+}
+
+.social {
+	margin-top: 32px;
+	font-size: 20px;
+
+	li {
+		display: inline-block;
+		position: relative;
+
+		a {
+			color: rgba(255,255,255,.5);
+
+			&:hover {
+				color: #fff;
+			}
+		}
+
+		&:before {
+			@include slash;
+		}
+
+		&:first-child:before {
+			content: "";
+			display: none;
+		}
+	}
+}
