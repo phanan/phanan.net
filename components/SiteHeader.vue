@@ -10,7 +10,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss" scoped>
 h1 {
 	font: normal 100 128px/128px Lato, sans-serif;
