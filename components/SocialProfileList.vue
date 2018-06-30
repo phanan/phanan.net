@@ -8,6 +8,7 @@
 import SocialProfileItem from '~/components/SocialProfileItem'
 
 export default {
+  name: 'Social-Profile-List',
   components: { SocialProfileItem },
 
   data () {

@@ -4,6 +4,13 @@
   </header>
 </template>
 
+<script>
+export default {
+  name: 'Site-Header'
+}
+</script>
+
+
 <style lang="scss" scoped>
 h1 {
 	font: normal 100 128px/128px Lato, sans-serif;

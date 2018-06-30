@@ -8,6 +8,7 @@
 import SocialProfileList from '~/components/SocialProfileList'
 
 export default {
+  name: 'Site-Footer',
   components: { SocialProfileList }
 }
 </script>

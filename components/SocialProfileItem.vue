@@ -8,6 +8,8 @@
 import isLinkObject from '~/validators/isLinkObject'
 
 export default {
+  name: 'Social-Profile-Item',
+
   props: {
     profile: {
       type: Object,
