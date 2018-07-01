@@ -1,4 +1,3 @@
-import { renderToString } from '@vue/server-test-utils'
 import SiteFooter from '~/components/SiteFooter'
 import SocialProfileList from '~/components/SocialProfileList'
 
