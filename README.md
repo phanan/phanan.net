@@ -1,4 +1,4 @@
-# phanan.net
+# phanan.net [![Build Status](https://travis-ci.org/phanan/phanan.net.svg?branch=master)](https://travis-ci.org/phanan/phanan.net)
 
 > The homepage for [phanan.net](https://phanan.net), built on [Nuxt.js](https://nuxtjs.org)
 
