@@ -1,3 +1,1 @@
-import setupHelpers from 'vue-test-helpers'
-
-setupHelpers()
+require('vue-test-helpers')()
