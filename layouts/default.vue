@@ -42,6 +42,7 @@ body {
     background: #000;
     padding: 30px 20px;
     font-size: 20px;
+    font-weight: 300;
   }
 }
 
