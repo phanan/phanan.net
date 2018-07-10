@@ -11,9 +11,7 @@ module.exports = {
       { property: 'og:image', content: '/phan-an.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,300&subset=latin,vietnamese,latin-ext' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:100' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   /*
@@ -37,5 +35,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  plugins: [
+    { src: '~plugins/webFontLoader.js', ssr: false }
+  ]
 }
