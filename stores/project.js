@@ -6,7 +6,6 @@ export const project = {
     { name: 'Viết lách', url: 'https://360.phanan.net' },
     { name: 'Ca dao Mẹ', url: 'https://cadao.me' },
     { name: 'Thi ca', url: 'https://thica.net' },
-    { name: 'Lá cải', url: 'http://lacai.org' },
-    { name: 'Ngày mới', url: 'http://ngaymoi.in' }
+    { name: 'Lá cải', url: 'http://lacai.org' }
   ])
 }
