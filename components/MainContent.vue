@@ -87,6 +87,7 @@ h1 {
     max-width: 100%;
     overflow: auto;
     padding: 84px 24px 24px;
+    -webkit-overflow-scrolling: touch;
     background: var(--bg-color);
     margin-left: 0;
     z-index: 99;
