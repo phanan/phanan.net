@@ -1,6 +1,6 @@
-import fetch from 'node-fetch'
-import parser from 'fast-xml-parser'
-import he from 'he'
+const fetch = require('node-fetch')
+const parser = require('fast-xml-parser')
+const he = require('he')
 
 const { GOODREADS_API_KEY, GOODREADS_ACCOUNT_ID } = process.env
 const API_ENDPOINT=`https://www.goodreads.com/review/list?v=2&shelf=currently-reading&key=${GOODREADS_API_KEY}&id=${GOODREADS_ACCOUNT_ID}`
