@@ -1,5 +1,5 @@
 <template>
-  <MainContent/>
+  <MainContent :with-details="false"/>
 </template>
 
 <script>

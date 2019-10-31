@@ -7,7 +7,7 @@
         <Introduction/>
       </div>
 
-      <aside class="details s-.7" ref="details">
+      <aside class="details s-.7" ref="details" v-if="withDetails">
         <a @click.prevent="dismiss" role="button" class="close">Close</a>
         <slot></slot>
       </aside>
@@ -17,6 +17,13 @@
 
 <script>
 export default {
+  props: {
+    withDetails: {
+      default: true,
+      type: Boolean
+    }
+  },
+
   components: {
     Introduction: () => import('../components/Introduction')
   },
@@ -28,9 +35,7 @@ export default {
   },
 
   mounted () {
-    window.setTimeout(() => {
-      this.$refs.details.classList.add('in')
-    }, 0)
+    this.withDetails && window.setTimeout(() => this.$refs.details.classList.add('in'), 0)
   }
 }
 </script>
