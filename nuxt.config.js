@@ -1,43 +1,54 @@
-module.exports = {
+
+export default {
+  mode: 'universal',
   /*
   ** Headers of the page
   */
   head: {
-    title: 'phanan.net',
+    title: process.env.npm_package_name || 'phanan.net',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Trang cá nhân của Phan An' },
-      { property: 'og:image', content: '/phan-an.jpg' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || 'Phan An’s personal homepage' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Literata:400,400i,600,600i,700,700i&display=swap&subset=vietnamese' }
     ]
   },
   /*
-  ** Customize the progress bar color
+  ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  /*
+  ** Global CSS
+  */
+  css: [
+  ],
+  /*
+  ** Plugins to load before mounting the App
+  */
+  plugins: [
+  ],
+  /*
+  ** Nuxt.js dev-modules
+  */
+  buildModules: [
+  ],
+  /*
+  ** Nuxt.js modules
+  */
+  modules: [
+  ],
   /*
   ** Build configuration
   */
   build: {
     /*
-    ** Run ESLint on save
+    ** You can extend webpack config here
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+    extend (config, ctx) {
     }
-  },
-
-  plugins: [
-    { src: '~plugins/webFontLoader.js', ssr: false }
-  ]
+  }
 }

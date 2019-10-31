@@ -1,6 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ProjectItem.vue matches snapshot 1`] = `
-<li><a href="https://foo.bar" rel="me">Foo Bar
-    <span class="url">foo.bar</span></a></li>
-`;

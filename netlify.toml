@@ -1,0 +1,4 @@
+[build]
+  command = "yarn generate"
+  publish = "dist"
+  functions = "dist/server"

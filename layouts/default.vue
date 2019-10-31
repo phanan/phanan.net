@@ -1,59 +1,99 @@
 <template>
-  <div>
-    <nuxt/>
-  </div>
+  <nuxt />
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_reset";
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-  font: normal 100 30px/50px Roboto, sans-serif;
-  position: relative;
+:root {
+  --bg-color: #fff;
+  --text-color: #4a4a4a;
+  --text-color-light: #666;
+  --link-color: #f00;
 }
 
-body {
-	position: relative;
-	height: 100%;
-	padding: 55px 0 0 85px;
-	text-transform: lowercase;
-	color: #fff;
-	background: #000 url("/phan-an.jpg") fixed center;
-	background-size: cover;
-
-	&::after {
-		display: block;
-		content: " ";
-		width: 100%;
-		height: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: rgba(0, 0, 0, .8);
-		z-index: -1;
-  }
-
-  @media only screen and (max-width: 640px) {
-    background: #000;
-    padding: 30px 20px;
-    font-size: 20px;
-    font-weight: 300;
-  }
+body, html {
+  font: 20px/37px 'Literata', serif;
+  color: var(--text-color);
+  background: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-	text-decoration: none;
-	color: #fff;
-	transition: .5s;
+  color: var(--link-color);
+  text-decoration: none;
 }
 
-::selection {
-	background: #fff;
-	color: #000;
+p {
+  margin: 0 0 1rem;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+em, i {
+  font-style: italic;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shadowed {
+  box-shadow: 0 3px 6px rgb(200, 200, 200);
+}
+
+.flex {
+  display: flex;
+}
+
+.m {
+  &b-24 {
+    margin-bottom: 24px;
+  }
+
+  &b-12 {
+    margin-bottom: 12px;
+  }
+
+  &b-8 {
+    margin-bottom: 8px;
+  }
+
+  &t-12 {
+    margin-top: 12px;
+  }
+}
+
+.al {
+  &-r {
+    text-align: right;
+  }
+}
+
+.p {
+  &l-24 {
+    padding-left: 24px;
+  }
+}
+
+.s- {
+  &\.7 {
+    font-size: .7rem;
+  }
+
+  &\.8 {
+    font-size: .8rem;
+  }
+}
+
+.rounded {
+  border-radius: 5px;
 }
 </style>

@@ -1,22 +1,11 @@
 <template>
-  <section>
-    <SiteHeader/>
-
-    <div role="main">
-      <ProjectList/>
-    </div>
-
-    <SiteFooter/>
-  </section>
+  <MainContent/>
 </template>
 
 <script>
-import ProjectList from '~/components/ProjectList'
-import SiteHeader from '~/components/SiteHeader'
-import SiteFooter from '~/components/SiteFooter'
-
 export default {
-  name: 'index',
-  components: { ProjectList, SiteHeader, SiteFooter }
+  components: {
+    MainContent: () => import('../components/MainContent')
+  }
 }
 </script>

@@ -1,12 +1,12 @@
-# phanan.net [![Build Status](https://travis-ci.org/phanan/phanan.net.svg?branch=master)](https://travis-ci.org/phanan/phanan.net)
+# phanan.net
 
-> The homepage for [phanan.net](https://phanan.net), built on [Nuxt.js](https://nuxtjs.org)
+> Phanan.net Homepage
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ yarn
+$ yarn install
 
 # serve with hot reload at localhost:3000
 $ yarn dev
@@ -19,4 +19,4 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

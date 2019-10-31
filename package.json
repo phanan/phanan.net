@@ -1,57 +1,33 @@
 {
-  "name": "phanan-net",
+  "name": "phanan.net",
   "version": "1.0.0",
-  "description": "phanan.net homepage",
-  "author": "me@phanan.net",
+  "description": "Phan An’s personal homepage",
+  "author": "Phan An",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "yarn lint",
-    "test": "jest --verbose"
+    "test": "jest",
+    "start:server": "netlify-lambda serve .functions -c webpack.server.js"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
-    "webfontloader": "^1.6.28"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@vue/server-test-utils": "^1.0.0-beta.20",
-    "@vue/test-utils": "^1.0.0-beta.20",
-    "babel-eslint": "^10.0.3",
-    "babel-jest": "^23.2.0",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "jest": "^23.2.0",
-    "jest-serializer-vue": "^2.0.2",
-    "node-sass": "^4.9.0",
-    "regenerator-runtime": "^0.12.0",
-    "sass-loader": "^7.0.3",
-    "vue-jest": "^2.6.0",
-    "vue-template-compiler": "^2.5.16",
-    "vue-test-helpers": "^2.0.0"
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "vue"
-    ],
-    "moduleNameMapper": {
-      "^~/(.*)$": "<rootDir>/$1"
-    },
-    "transform": {
-      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
-      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
-    },
-    "snapshotSerializers": [
-      "<rootDir>/node_modules/jest-serializer-vue"
-    ],
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setup.js"
+    "@vue/test-utils": "^1.0.0-beta.27",
+    "babel-jest": "^24.1.0",
+    "dompurify": "^2.0.7",
+    "dotenv": "^8.2.0",
+    "fast-xml-parser": "^3.14.0",
+    "he": "^1.2.0",
+    "jest": "^24.1.0",
+    "jsdom": "^15.2.0",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "vue-jest": "^4.0.0-0"
   }
 }
