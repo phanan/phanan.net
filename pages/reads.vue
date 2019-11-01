@@ -3,27 +3,18 @@
     <div class="book flex mb-24" v-if="book">
       <div>
         <a :href="book" title="Read more on Goodreads">
-          <img
-            :alt="`${book.title} cover`"
-            :src="book.cover"
-            class="shadowed"
-            height=auto
-            width=64px
-          >
+          <img :alt="`${book.title} cover`" :src="book.cover" class="shadowed" height="auto" width="64px">
         </a>
       </div>
       <div class="pl-24">
         <p class="mb-12 s-.8">
-          Currently reading
-          <em><a :href="book.url">{{ book.title }}</a></em>
-          by {{ book.author }}
+          Currently reading <em><a :href="book.url">{{ book.title }}</a></em> by {{ book.author }}
         </p>
-
-        <div class=book-description v-html="book.description"/>
+        <div class="book-description" v-html="book.description"/>
         <p class="more mt-12 al-r">More on <a :href="book.url">Goodreads</a></p>
       </div>
     </div>
-    <p class=muted v-else>
+    <p v-else>
       <template v-if="errored">
         Can't fetch data at the moment. Do you want to check out my
         <a href="https://www.goodreads.com/review/list/51137502">Goodreads profile</a>
@@ -60,11 +51,9 @@ export default {
   },
 
   async created () {
-    if (!process.client) {
-      return
+    if (process.client) {
+      this.book = await this.fetchLatestBook()
     }
-
-    this.book = await this.fetchLatestBook()
   }
 }
 </script>
