@@ -2,9 +2,35 @@
   <nuxt />
 </template>
 
+<script>
+export default {
+  methods: {
+    maybeActivateDarkMode: () => {
+      if ((new Date()).getHours() > 19) {
+        document.querySelector(':root').classList.add('dark')
+      }
+    }
+  },
+
+  created () {
+    if (process.client) {
+      this.maybeActivateDarkMode()
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+@mixin dark-mode () {
+  --bg-color: #202124;
+  --text-color: #b1b6bb;
+  --text-color-light: #9aa0a6;
+  --link-color: #f56f82;
+  --link-color-hover: #fff;
 }
 
 :root {
@@ -12,6 +38,15 @@
   --text-color: #4a4a4a;
   --text-color-light: #666;
   --link-color: #f00;
+  --link-color-hover: #f00;
+
+  &.dark {
+    @include dark-mode();
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @include dark-mode();
+  }
 }
 
 body, html {
@@ -25,6 +60,11 @@ body, html {
 a {
   color: var(--link-color);
   text-decoration: none;
+  transition: .2s ease-out;
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
 }
 
 p {
@@ -46,7 +86,7 @@ ul, li {
 }
 
 .shadowed {
-  box-shadow: 0 3px 6px rgb(200, 200, 200);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .2);
 }
 
 .flex {
