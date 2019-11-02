@@ -3,18 +3,36 @@
 </template>
 
 <script>
+const AVAILABLE_THEMES = ['dark', 'light']
+
 export default {
-  methods: {
-    maybeActivateDarkMode: () => {
-      if ((new Date()).getHours() > 19) {
-        document.querySelector(':root').classList.add('dark')
-      }
+  computed: {
+    nightTime: () => (new Date()).getHours() > 19,
+
+    forcedTheme: () => {
+      const theme = (new URLSearchParams(window.location.search)).get('__theme')
+      return AVAILABLE_THEMES.includes(theme) ? theme : null
     }
+  },
+
+  methods: {
+    maybeSetTheme () {
+      if (this.forcedTheme) {
+        this.applyTheme(this.forcedTheme)
+        return
+      }
+
+      if (this.nightTime) {
+        this.applyTheme('dark')
+      }
+    },
+
+    applyTheme: theme => document.querySelector(':root').classList.add(theme)
   },
 
   created () {
     if (process.client) {
-      this.maybeActivateDarkMode()
+      this.maybeSetTheme()
     }
   }
 }
@@ -25,7 +43,7 @@ export default {
   box-sizing: border-box;
 }
 
-@mixin dark-mode () {
+@mixin dark-theme () {
   --bg-color: #202124;
   --text-color: #b1b6bb;
   --text-color-light: #9aa0a6;
@@ -33,19 +51,27 @@ export default {
   --link-color-hover: #fff;
 }
 
-:root {
+@mixin light-theme () {
   --bg-color: #fff;
   --text-color: #4a4a4a;
   --text-color-light: #666;
   --link-color: #f00;
-  --link-color-hover: #f00;
+  --link-color-hover: #f00
+}
+
+:root {
+  @include light-theme();
+
+  &.light {
+    @include light-theme();
+  }
 
   &.dark {
-    @include dark-mode();
+    @include dark-theme();
   }
 
   @media (prefers-color-scheme: dark) {
-    @include dark-mode();
+    @include dark-theme();
   }
 }
 
