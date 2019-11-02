@@ -14,7 +14,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Literata:400,400i,600,600i,700,700i&display=swap&subset=vietnamese' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Literata:400,400i,600,600i&display=swap&subset=vietnamese' }
     ]
   },
   /*
