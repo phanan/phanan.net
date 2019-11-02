@@ -7,7 +7,7 @@
         <Introduction/>
       </div>
 
-      <aside class="details s-.7" ref="details" v-if="withDetails">
+      <aside class="details pos-rel s-.7" ref="details" v-if="withDetails">
         <a @click.prevent="dismiss" role="button" class="close">Close</a>
         <slot></slot>
       </aside>
@@ -66,7 +66,6 @@ h1 {
   max-width: 640px;
   opacity: 0;
   margin-left: 30px;
-  position: relative;
 
   &.in {
     transition: ease-out .3s;

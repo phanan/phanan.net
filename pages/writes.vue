@@ -3,7 +3,7 @@
     <ul>
       <li :key="book.url" class="flex mb-24" v-for="book in books">
         <div>
-          <a :href="book.url">
+          <a :href="book.url" class="pos-rel top-0 hov:top--10">
             <img :alt="`${book.title} cover`" :src="book.cover" class="shadowed" height="auto" width="64px">
           </a>
         </div>

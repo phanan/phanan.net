@@ -3,7 +3,7 @@
     <ul>
       <li :key="project.url" class="flex mb-24" v-for="project in projects">
         <div>
-          <a :href="project.url">
+          <a :href="project.url" class="pos-rel top-0 hov:top--10">
             <img :alt="`${project.name} logo`" :src="project.logo" height="auto" width="64px">
           </a>
         </div>

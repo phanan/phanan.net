@@ -136,4 +136,26 @@ ul, li {
 .rounded {
   border-radius: 5px;
 }
+
+.pos- {
+  &rel {
+    position: relative;
+  }
+}
+
+.top- {
+  &0 {
+    top: 0;
+  }
+}
+
+.hov\: {
+  &top- {
+    &-10 {
+      &:hover {
+        top: -10px;
+      }
+    }
+  }
+}
 </style>
