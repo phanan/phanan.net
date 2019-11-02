@@ -8,7 +8,7 @@
       </div>
 
       <aside class="details pos-rel s-.7" ref="details" v-if="withDetails">
-        <a @click.prevent="dismiss" role="button" class="close">Close</a>
+        <a @click.prevent="dismiss" role="button" class="close pos-abs">Close</a>
         <slot></slot>
       </aside>
     </main>
@@ -104,7 +104,6 @@ h1 {
 
   .close {
     display: block;
-    position: absolute;
     right: 24px;
     top: 24px;
     background: var(--link-color);

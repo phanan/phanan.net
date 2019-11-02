@@ -167,6 +167,10 @@ ul, li {
   &rel {
     position: relative;
   }
+
+  &abs {
+    position: absolute;
+  }
 }
 
 .top- {

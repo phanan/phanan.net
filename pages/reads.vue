@@ -11,7 +11,7 @@
           Currently reading <em><a :href="book.url">{{ book.title }}</a></em> by {{ book.author }}
         </p>
         <div class="book-description" v-html="book.description"/>
-        <p class="more mt-12 al-r">More on <a :href="book.url">Goodreads</a></p>
+        <p class="more mt-12 al-r">View on <a :href="book.url">Goodreads</a></p>
       </div>
     </div>
     <p v-else>
