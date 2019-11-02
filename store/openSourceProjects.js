@@ -5,13 +5,15 @@ export default [
     logo: '/images/logos/koel.svg',
     description: `My most popular open-source software to date. Went viral upon release and got featured on
     <a href="https://www.producthunt.com/posts/koel">Product Hunt</a> and
-    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~11K GitHub stars and counting.`
+    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~11K GitHub stars and
+    counting.`
   },
   {
     name: 'Vue.js – The progressive JavaScript framework',
     url: 'https://vuejs.org',
     logo: '/images/logos/vue.png',
-    description: 'One of the most popular modern JavaScript frameworks. I’m lucky enough to be among the first core members circa 2016.'
+    description: `One of the most popular modern JavaScript frameworks. I’m lucky enough to be among the first core
+    members since circa 2016.`
   },
   {
     name: 'kupo – Simple site launch checklist checker/validator',
