@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import 'url-search-params-polyfill'
-
 const AVAILABLE_THEMES = ['dark', 'light']
 
 export default {

@@ -13,8 +13,7 @@
     "start:server": "netlify-lambda serve .functions -c webpack.server.js"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "url-search-params-polyfill": "^7.0.0"
+    "nuxt": "^2.0.0"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.27",
