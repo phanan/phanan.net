@@ -2,7 +2,7 @@
   <MainContent>
     <div class="book flex mb-24" v-if="book">
       <div>
-        <a :href="book" class="pos-rel top-0 hov:top--10" title="Read more on Goodreads">
+        <a :href="book.url" class="pos-rel top-0 hov:top--10" title="Read more on Goodreads">
           <img :alt="`${book.title} cover`" :src="book.cover" class="shadowed" height="auto" width="64px">
         </a>
       </div>
