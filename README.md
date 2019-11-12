@@ -2,6 +2,8 @@
 
 > Phanan.net Homepage
 
+<img src="https://github.com/phanan/phanan.net/raw/master/screenshot.png" width="100%" height="auto" alt="Screenshot">
+
 ## Build Setup
 
 ``` bash
