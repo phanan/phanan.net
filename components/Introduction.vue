@@ -2,7 +2,7 @@
   <div>
     <p>
       <strong>My name is Phan An</strong> – with “An” being the first name in case you’re wondering.
-      I’m the hybrid of
+      I’m the mix of
         a <nuxt-link to="/writes">published author</nuxt-link>,
         an <a href="/codes">open source proponent</a>,
         a founder of several inspiring <a href="/creates">cultural/community projects</a>,
