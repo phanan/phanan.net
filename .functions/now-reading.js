@@ -3,18 +3,18 @@ const parser = require('fast-xml-parser')
 const he = require('he')
 
 const { GOODREADS_API_KEY, GOODREADS_ACCOUNT_ID } = process.env
-const API_ENDPOINT=`https://www.goodreads.com/review/list?v=2&shelf=currently-reading&key=${GOODREADS_API_KEY}&id=${GOODREADS_ACCOUNT_ID}`
+const API_ENDPOINT = `https://www.goodreads.com/review/list?v=2&shelf=currently-reading&key=${GOODREADS_API_KEY}&id=${GOODREADS_ACCOUNT_ID}`
 
 /**
  * A hack to get a higher-resolution image URL from Goodreads API.
  *
- * @param {String} tinyUrl
+ * @param {String} tinyImageUrl
  */
-const getLargeImageUrl = tinyUrl => tinyUrl.replace(/\._SX\d+_\./g, '.')
+const getLargeImageUrl = tinyImageUrl => tinyImageUrl.replace(/\._SX\d+_\./g, '.')
 
 /**
  * Decode an HTML string.
- * Prone to XSS attack! Only used on trusted API response from Goodreads.
+ * Prone to XSS attacks! Only used on trusted API responses from Goodreads.
  *
  * @param {string} html
  */
