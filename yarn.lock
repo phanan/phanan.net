@@ -3744,10 +3744,10 @@ fast-levenshtein@~2.0.4:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-fast-xml-parser@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.14.0.tgz#6fc1e927d13ac2e2ff8ccc5812c4f881fbc91284"
-  integrity sha512-3SzQnPNtMVqaBVDzYqYt0BTaaLwkd45wTbsUsH1eiE9dnyc4b8mYcm1Q0Rcx9AWkeTj5UZFTTm55Io5yVWS1tg==
+fast-xml-parser@3.16.0:
+  version "3.16.0"
+  resolved "https://registry.yarnpkg.com/fast-xml-parser/-/fast-xml-parser-3.16.0.tgz#d905e7e6b28fc4648cabebcb074363867fb56ee2"
+  integrity sha512-U+bpScacfgnfNfIKlWHDu4u6rtOaCyxhblOLJ8sZPkhsjgGqdZmVPBhdOyvdMGCDt8CsAv+cssOP3NzQptNt2w==
 
 fastq@^1.6.0:
   version "1.6.0"
