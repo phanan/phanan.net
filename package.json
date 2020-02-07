@@ -13,21 +13,21 @@
     "start:server": "netlify-lambda serve .functions -c webpack.server.js"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "2.10.2"
   },
   "devDependencies": {
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-jest": "^24.1.0",
-    "dompurify": "^2.0.7",
-    "dotenv": "^8.2.0",
-    "fast-xml-parser": "^3.14.0",
-    "he": "^1.2.0",
-    "jest": "^24.1.0",
-    "jsdom": "^15.2.0",
-    "netlify-lambda": "^1.6.3",
-    "node-fetch": "^2.6.0",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "vue-jest": "^4.0.0-0"
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-jest": "24.9.0",
+    "dompurify": "2.0.7",
+    "dotenv": "8.2.0",
+    "fast-xml-parser": "3.14.0",
+    "he": "1.2.0",
+    "jest": "24.9.0",
+    "jsdom": "15.2.0",
+    "netlify-lambda": "1.6.3",
+    "node-fetch": "2.6.0",
+    "node-sass": "4.13.0",
+    "sass-loader": "8.0.0",
+    "vue-jest": "4.0.0-beta.2"
   }
 }
