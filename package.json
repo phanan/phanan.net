@@ -23,7 +23,7 @@
     "fast-xml-parser": "3.14.0",
     "he": "1.2.0",
     "jest": "24.9.0",
-    "jsdom": "15.2.0",
+    "jsdom": "15.2.1",
     "netlify-lambda": "1.6.3",
     "node-fetch": "2.6.1",
     "node-sass": "4.13.1",
