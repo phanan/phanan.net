@@ -16,7 +16,7 @@
     "nuxt": "2.10.2"
   },
   "devDependencies": {
-    "@vue/test-utils": "1.0.0-beta.29",
+    "@vue/test-utils": "1.0.0-beta.31",
     "babel-jest": "24.9.0",
     "dompurify": "2.0.8",
     "dotenv": "8.2.0",
