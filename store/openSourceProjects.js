@@ -12,8 +12,8 @@ export default [
     name: 'Vue.js – The progressive JavaScript framework',
     url: 'https://vuejs.org',
     logo: '/images/logos/vue.png',
-    description: `One of the most popular modern JavaScript frameworks. I’m lucky enough to be among the first core
-    members since circa 2016.`
+    description: `One of the most popular modern JavaScript frameworks. I’m lucky enough to be among
+    <a href="https://vuejs.org/v2/guide/team.html">the first core members</a> since circa 2016.`
   },
   {
     name: 'kupo – Simple site launch checklist checker/validator',
