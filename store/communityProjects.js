@@ -5,7 +5,7 @@ export default [
     logo: '/images/logos/csct.png',
     description: `Lit. <em>Spelling Police</em>, my latest community/cultural initiative in co-authorship with
     <a href="https://vi.wikipedia.org/wiki/Phong_D%C6%B0%C6%A1ng">Nguyen Thanh Phong</a>, one of Vietnam’s most
-    respected contemporary comic artists.`
+    prolific contemporary comic artists.`
   },
   {
     name: 'Ca dao Mẹ',
