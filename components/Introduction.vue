@@ -13,7 +13,7 @@
       You can find me on
         <a href="https://github.com/phanan">GitHub</a>,
         <a href="https://twitter.com/notphanan">Twitter</a>,
-        and <a href="https://fb.me/phoenixheart">Facebook</a>.
+        and <a href="https://fb.me/real.phanan">Facebook</a>.
       An outdated <a href="https://www.linkedin.com/in/phanan">LinkedIn profile</a> is also available.
       If you happen to read Vietnamese, I own a <a href="https://360.phanan.net">blog</a>
         where I once in a while jot down thoughts, essays, and short stories.
