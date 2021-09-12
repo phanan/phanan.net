@@ -17,7 +17,14 @@ export default [
     title: 'Con chim khổng tước còn hót vang ngày mở đất',
     url: 'https://khongtuoc.phanan.net',
     cover: '/images/books/khong-tuoc.jpg',
-    description: `Lit. <em>The peacock’s still singing since the days of expansion</em>, my third and latest book,
+    description: `Lit. <em>The peacock’s still singing since the days of expansion</em>,
     published in 2016. A collection of short stories and essays about childhood, homeland, and memories.`
+  },
+  {
+    title: 'Lá Cải: Một ngàn câu chuyện',
+    url: 'https://books.phanan.net/l/lacai',
+    cover: '/images/books/lacai.jpg',
+    description: `Lit. <em>Lá Cải: A thousand stories </em>, a collection of hand-picked articles from my website
+    <a href="https://lacai.org">lacai.org</a>, published as an ebook.`
   }
 ]
