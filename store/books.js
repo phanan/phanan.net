@@ -24,7 +24,7 @@ export default [
     title: 'Lá Cải: Một ngàn câu chuyện',
     url: 'https://books.phanan.net/l/lacai',
     cover: '/images/books/lacai.jpg',
-    description: `Lit. <em>Lá Cải: A thousand stories </em>, a collection of hand-picked articles from my website
-    <a href="https://lacai.org">lacai.org</a>, published as an ebook.`
+    description: `Lit. <em>Lá Cải: A thousand stories</em>, a collection of articles curated from my website
+    <a href="https://lacai.org">lacai.org</a> and published as an ebook.`
   }
 ]
