@@ -5,14 +5,16 @@ export default [
     logo: '/images/logos/koel.svg',
     description: `My most popular open-source software to date. Went viral upon release and got featured on
     <a href="https://www.producthunt.com/posts/koel">Product Hunt</a> and
-    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~12K GitHub stars and
+    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~13K GitHub stars and
     counting.`
   },
   {
     name: 'Vue.js – The progressive JavaScript framework',
     url: 'https://vuejs.org',
     logo: '/images/logos/vue.png',
-    description: `One of the most popular modern JavaScript frameworks. I’m lucky enough to be among
+    description: `One of the most popular modern JavaScript frameworks, used by many—including NASA for
+    <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#list-of-qualifying-repositories-for-mars-2020-helicopter-contributor-badge">humanity’s first
+    helicopter on Mars</a>. I’m lucky enough to be among
     <a href="https://vuejs.org/v2/guide/team.html">the first core members</a> since circa 2016.`
   },
   {
