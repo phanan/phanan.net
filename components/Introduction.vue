@@ -1,7 +1,9 @@
 <template>
   <div>
     <p>
-      <strong>My name is Phan An</strong> – with “An” being the first name in case you’re wondering.
+      <strong>My name is Phan An</strong>
+      – “An”
+      <a href="https://en.wikipedia.org/wiki/Vietnamese_name">being the given name</a>.
       I’m the mix of
         a <nuxt-link to="/writes">published author</nuxt-link>,
         an <a href="/codes">open source proponent</a>,
