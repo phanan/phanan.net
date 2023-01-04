@@ -5,7 +5,7 @@ export default [
     logo: '/images/logos/koel.svg',
     description: `My most popular open-source software to date. Went viral upon release and got featured on
     <a href="https://www.producthunt.com/posts/koel">Product Hunt</a> and
-    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~13K GitHub stars and
+    <a href="https://laravel-news.com/open-source-music-streaming-with-koel">Laravel News</a>. ~14K GitHub stars and
     counting.`
   },
   {
