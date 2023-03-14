@@ -1,7 +1,7 @@
 export default [
   {
     name: 'koel – A personal music streaming server that works',
-    url: 'https://koel.phanan.net',
+    url: 'https://koel.dev',
     logo: '/images/logos/koel.svg',
     description: `My most popular open-source software to date. Went viral upon release and got featured on
     <a href="https://www.producthunt.com/posts/koel">Product Hunt</a> and
