@@ -13,7 +13,7 @@ export default [
     url: 'https://vuejs.org',
     logo: '/images/logos/vue.png',
     description: `One of the most popular modern JavaScript frameworks, used by many—including NASA for
-    <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#list-of-qualifying-repositories-for-mars-2020-helicopter-contributor-badge">humanity’s first
+    <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/personalizing-your-profile#list-of-qualifying-repositories-for-mars-2020-helicopter-contributor-achievement">humanity’s first
     helicopter on Mars</a>. I’m lucky enough to be among
     <a href="https://vuejs.org/v2/guide/team.html">the first core members</a> since circa 2016.`
   },
