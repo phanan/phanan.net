@@ -26,7 +26,7 @@
     "jsdom": "15.2.1",
     "netlify-lambda": "1.6.3",
     "node-fetch": "2.6.1",
-    "node-sass": "4.13.1",
+    "node-sass": "7.0.0",
     "sass-loader": "8.0.2",
     "vue-jest": "4.0.0-beta.2"
   }
