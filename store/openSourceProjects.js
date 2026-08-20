@@ -15,7 +15,7 @@ export default [
     description: `One of the most popular modern JavaScript frameworks, used by many—including NASA for
     <a href="https://github.com/readme/featured/nasa-ingenuity-helicopter">humanity’s first
     helicopter on Mars</a>. I’m lucky enough to be among
-    <a href="https://vuejs.org/v2/guide/team.html">the first core members</a> since circa 2016.`
+    <a href="https://vuejs.org/about/team.html">the first core members</a> since circa 2016.`
   },
   {
     name: 'kupo – Simple site launch checklist checker/validator',
